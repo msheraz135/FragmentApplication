@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FragmentApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="android:textColorPrimary">@color/text_color_light</item>
+        <item name="android:textColorSecondary">@color/text_color_light</item>
+        <item name="colorAccent">@color/accent_color_light</item>
+    </style>
+
+    <color name="text_color_light">@color/black</color>
+    <color name="accent_color_light">#4CAF50</color>
+
+    <style name="Theme.FragmentApplication" parent="Base.Theme.FragmentApplication" />
+</resources>

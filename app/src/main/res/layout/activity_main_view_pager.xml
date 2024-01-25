@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivityViewPager">
+
+    <FrameLayout
+        android:id="@+id/nav_host_fragment_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabLayout">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="?attr/colorPrimary"
+        app:tabIndicatorHeight="2dp"
+        app:tabSelectedTextColor="?attr/colorPrimary"
+        app:tabMode="scrollable"
+        app:tabTextColor="?android:attr/textColorSecondary"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+
+        android:id="@+id/nav_view_2"
+        android:background="?android:attr/windowBackground"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_btm_nav"/>
+
+
+</RelativeLayout>
